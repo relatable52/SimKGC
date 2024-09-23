@@ -83,7 +83,7 @@ args = parser.parse_args()
 
 assert not args.train_path or os.path.exists(args.train_path)
 assert args.pooling in ['cls', 'mean', 'max']
-assert args.task.lower() in ['wn18rr', 'fb15k237', 'wiki5m_ind', 'wiki5m_trans']
+assert args.task.lower() in ['wn18rr', 'fb15k237', 'wiki5m_ind', 'wiki5m_trans', 'vul_lib']
 assert args.lr_scheduler in ['linear', 'cosine']
 
 if args.model_dir:
